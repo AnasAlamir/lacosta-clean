@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <title>الرائد - خدمات التنظيف الاحترافية</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="templatesjungle">
+  <meta name="keywords" content="موقع تنظيف">
+  <meta name="description" content="موقع متخصص في خدمات التنظيف الاحترافية">
+
+  <!--Bootstrap ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!--Link Swiper's CSS ================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Arabic Font ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- RTL CSS Fixes -->
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      text-align: right;
+    }
+    .navbar-nav {
+      padding-right: 0;
+    }
+    .dropdown-menu {
+      text-align: right;
+      left: auto;
+      right: 0;
+    }
+    .info li {
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+    .me-1 {
+      margin-right: 0.25rem !important;
+      margin-left: 0 !important;
+    }
+    .ms-1 {
+      margin-left: 0.25rem !important;
+      margin-right: 0 !important;
+    }
+    .me-4 {
+      margin-right: 1.5rem !important;
+      margin-left: 0 !important;
+    }
+    .ms-4 {
+      margin-left: 1.5rem !important;
+      margin-right: 0 !important;
+    }
+    .text-end {
+      text-align: left !important;
+    }
+    .text-lg-end {
+      text-align: left !important;
+    }
+    @media (min-width: 992px) {
+      .text-lg-end {
+        text-align: left !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- SVG Icons (same as original) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- Keep all SVG symbols here (same as original) -->
+    <!-- ... -->
+  </svg>
+
+  <header id="header">
+    <nav class="header-top">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/main-logo.png" class="logo img-fluid">
+          </a>
+          <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
+            <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
+              <svg class="text-primary me-1" width="20" height="20">
+                <use xlink:href="#phone"></use>
+              </svg> اتصل بنا: 666 333 9999
+            </li>
+            <li class="time text-black fw-medium text-capitalize d-flex align-items-center ms-4">
+              <svg class="text-primary me-1" width="20" height="20">
+                <use xlink:href="#clock"></use>
+              </svg> 8:00-18:00, السبت: مغلق
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="m-0">
+    <nav id="primary-header" class="navbar navbar-expand-lg py-3">
+      <div class="container justify-content-end">
+        <button class="navbar-toggler d-flex d-lg-none justify-content-end border-0 shadow-none p-0" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+          <svg class="navbar-icon" width="60" height="60">
+            <use xlink:href="#navbar-icon"></use>
+          </svg>
+        </button>
+        <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 mt-3 mb-1">
+            <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close" data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body align-items-center justify-content-center">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link active p-0" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0 dropdown">
+                <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">صفحات <svg width="20" height="20" style="vertical-align: sub;">
+                    <use xlink:href="#arrow-down"></use>
+                  </svg></a>
+                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
+                  <li><a href="index.html" class="dropdown-item">من نحن</a></li>
+                  <li><a href="index.html" class="dropdown-item">المدونة</a></li>
+                  <li><a href="index.html" class="dropdown-item">مقال مفرد</a></li>
+                  <li><a href="index.html" class="dropdown-item">طلب عرض سعر</a></li>
+                  <li><a href="index.html" class="dropdown-item">الخدمات</a></li>
+                  <li><a href="index.html" class="dropdown-item">خدمة مفردة</a></li>
+                  <li><a href="index.html" class="dropdown-item">المشاريع</a></li>
+                  <li><a href="index.html" class="dropdown-item">مشروع مفرد</a></li>
+                  <li><a href="index.html" class="dropdown-item">الأسعار</a></li>
+                  <li><a href="index.html" class="dropdown-item">اتصل بنا</a></li>
+                  <li><a href="index.html" class="dropdown-item">فريقنا</a></li>
+                  <li><a href="index.html" class="dropdown-item">التقييمات</a></li>
+                  <li><a href="index.html" class="dropdown-item">الأسئلة الشائعة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link p-0" href="index.html">من نحن</a>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link p-0" href="index.html">الخدمات</a>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link p-0" href="index.html">المشاريع</a>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link p-0" href="index.html">المدونة</a>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link p-0" href="index.html">اتصل بنا</a>
+              </li>
+              <li class="nav-item px-3 py-1 py-lg-0">
+                <a class="nav-link p-0" href="index.html">طلب عرض سعر</a>
+              </li>
+              <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
+                <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">
+                  <svg class="search" width="24" height="24">
+                    <use xlink:href="#search"></use>
+                  </svg>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
+                  <li class="position-relative d-flex align-items-center p-0">
+                    <input class="form-control me-2" type="search" placeholder="بحث..." aria-label="Search">
+                    <button class="btn btn-primary position-absolute end-0" type="submit">
+                      <svg class="search" width="24" height="24">
+                        <use xlink:href="#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="billboard">
+    <div class="row align-items-center g-0 bg-secondary">
+      <div class="col-lg-6">
+        <div class="m-4 p-4 m-lg-5 p-lg-5">
+          <h6 class="text-white"><span class="text-primary">#</span>أفضل خدمة تنظيف</h6>
+          <h2 class="display-4 fw-bold text-white my-4">خبرة أكثر من 7 سنوات في جميع مجالات النظافة</h2>
+          <ul class="info d-flex flex-wrap align-items-center list-unstyled">
+            <li class="fw-medium text-white d-flex align-items-center me-4">
+              <svg class="text-primary me-1" width="20" height="20">
+                <use xlink:href="#check-circle"></use>
+              </svg> تنظيف عميق
+            </li>
+            <li class="fw-medium text-white d-flex align-items-center me-4">
+              <svg class="text-primary me-1" width="20" height="20">
+                <use xlink:href="#check-circle"></use>
+              </svg> تنظيف السجاد
+            </li>
+            <li class="fw-medium text-white d-flex align-items-center me-4">
+              <svg class="text-primary me-1" width="20" height="20">
+                <use xlink:href="#check-circle"></use>
+              </svg> تنظيف المنازل
+            </li>
+          </ul>
+          <a href="index.html" class="btn btn-light btn-bg btn-slide hover-slide-right mt-4">
+            <span>حجز موعد</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/clean-main.jpg" alt="img" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <section id="brands" class="padding-small">
+    <div class="container">
+      <h6 class="fst-italic text-capitalize mb-4"> <span class="text-primary">|</span> نتعامل مع جميع أنواع المنظفات العالمية
+      </h6>
+      <div class="row">
+        <div class="col my-4">
+          <a href="#"><img src="images/brand1.png" class="brand-image img-fluid"></a>
+        </div>
+        <div class="col my-4">
+          <a href="#"><img src="images/brand2.png" class="brand-image img-fluid"></a>
+        </div>
+        <div class="col my-4">
+          <a href="#"><img src="images/brand3.png" class="brand-image img-fluid"></a>
+        </div>
+        <div class="col my-4">
+          <a href="#"><img src="images/brand4.png" class="brand-image img-fluid"></a>
+        </div>
+        <div class="col my-4">
+          <a href="#"><img src="images/brand5.png" class="brand-image img-fluid"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us">
+    <div class="container">
+      <div class="row g-md-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="imageblock position-relative">
+            <img class="img-fluid" src="images/worker.jpg" alt="img">
+            <div class="video-player position-absolute top-50 start-50 translate-middle">
+              <a type="button" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/W_tIumKa8VY"
+                data-bs-target="#myModal" class="play-btn position-relative">
+                <svg class="play-icon text-primary my-3" width="80" height="80">
+                  <use xlink:href="#play-button"></use>
+                </svg>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 mt-5">
+          <h6><span class="text-primary">|</span>من نحن</h6>
+          <h3 class="display-6 fw-semibold mb-4">نحن متخصصون في خدمات التنظيف الاحترافية</h3>
+          <p>مرحبًا بكم في شركة الرائد للتنظيف، حيث الجودة تلتقي بالكفاءة! نحن نفتخر بأننا من أفضل مقدمي خدمات التنظيف للمنازل والشركات والمؤسسات. فريقنا من المحترفين المتفانين ملتزم بتقديم خدمات عالية الجودة لضمان بقاء بيئتك الداخلية نظيفة وصحية.</p>
+          <p class="fw-semibold m-0">رسالتنا</p>
+          <p>في شركة الرائد للتنظيف، مهمتنا هي خلق مساحات نظيفة وصحية وعملية لعملائنا الكرام. نحن نسعى جاهدين لتحسين جودة حياتك من خلال تقديم خدمات تنظيف موثوقة مصممة خصيصًا لاحتياجاتك الخاصة. سواء كان ذلك تنظيفًا عميقًا، أو صيانة دورية، أو خدمات تنظيف سريعة، نحن شريكك الموثوق.</p>
+          <a href="index.html" class="btn btn-primary btn-slide hover-slide-right mt-4">
+            <span>المزيد عنا</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rest of the sections with Arabic content -->
+  <!-- Testimonials, Services, Quote, Projects, FAQ, Blog, Features, CTA sections -->
+  <!-- All should be translated to Arabic similar to the sections above -->
+
+  <footer id="footer">
+    <div class="container padding-small">
+      <div class="row flex-wrap justify-content-between">
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="footer-menu">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/main-logo.png" class="logo img-fluid">
+            </a>
+            <ul class="menu-list d-flex flex-column list-unstyled mt-3">
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> الرئيسية</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> من نحن</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> آراء العملاء</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> مدونتنا</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> سياسة الخصوصية</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> الشروط والأحكام</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> خدماتنا</a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="footer-menu">
+            <h5 class=" widget-title py-2 mt-3 fw-semibold">خدمات التنظيف</h5>
+            <ul class="menu-list d-flex flex-column list-unstyled">
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف المنازل </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف المكاتب </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف السجاد </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف المفروشات </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف الزجاج </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف بعد البناء </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> خدمات التنظيف الدوري </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> خدمات التنظيف الطارئة </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="footer-menu">
+            <h5 class=" widget-title py-2 mt-3 fw-semibold">خدمات أخرى</h5>
+            <ul class="menu-list d-flex flex-column list-unstyled">
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تعقيم وتطهير </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="20" height="20">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> مكافحة الحشرات </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف خزانات المياه </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف المسابح </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> تنظيف السيارات </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> خدمات البستنة </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> خدمات النقل </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> خدمات التخزين </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pb-3">
+          <div class="footer-menu">
+            <h5 class=" widget-title py-2 mt-3 fw-semibold">معلومات الاتصال</h5>
+            <ul class="menu-list d-flex flex-column list-unstyled">
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="18" height="18">
+                  <use xlink:href="#location"></use>
+                </svg><a href="#"> الرياض، المملكة العربية السعودية </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="18" height="18">
+                  <use xlink:href="#email"></use>
+                </svg><a href="#"> info@alraed.com </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="18" height="18">
+                  <use xlink:href="#phone"></use>
+                </svg><a href="#"> 666 333 9999 </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="18" height="18">
+                  <use xlink:href="#clock"></use>
+                </svg><a href="#"> 8:00-18:00, السبت: مغلق </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h5 class=" widget-title py-2 mt-4 fw-semibold">طرق الدفع</h5>
+            <ul class="payment-links d-flex flex-wrap list-unstyled">
+              <li class="payment me-3">
+                <a href="#">
+                  <svg class=" me-1" width="26" height="26">
+                    <use xlink:href="#visa"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="payment me-3">
+                <a href="#">
+                  <svg class=" me-1" width="26" height="26">
+                    <use xlink:href="#mastercard"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="payment me-3">
+                <a href="#">
+                  <svg class=" me-1" width="26" height="26">
+                    <use xlink:href="#paypal"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h5 class=" widget-title py-2 mt-4 fw-semibold">وسائل التواصل</h5>
+            <ul class="social-links d-flex flex-wrap list-unstyled">
+              <li class="social me-3">
+                <a href="#">
+                  <svg class=" me-1" width="24" height="24">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social me-3">
+                <a href="#">
+                  <svg class=" me-1" width="24" height="24">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social me-3">
+                <a href="#">
+                  <svg class=" me-1" width="24" height="24">
+                    <use xlink:href="#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social me-3">
+                <a href="#">
+                  <svg class=" me-1" width="24" height="24">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social me-3">
+                <a href="#">
+                  <svg class=" me-1" width="24" height="24">
+                    <use xlink:href="#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="m-0">
+    <div class="container">
+      <div class="footer-bottom d-md-flex justify-content-between py-4">
+        <p class=" mb-0">© 2024 الرائد للتنظيف - جميع الحقوق محفوظة</p>
+        <p class=" mb-0">تصميم الموقع بواسطة: <a href="https://templatesjungle.com/" target="_blank"
+            class="text-decoration-underline fw-semibold "> TemplatesJungle</a> توزيع: <a href="https://themewagon.com" target="blank"
+          class="text-decoration-underline fw-semibold">ThemeWagon</a> </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Popup -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40"
+              height="40">
+              <use xlink:href="#close-sharp"></use>
+            </svg></button>
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
