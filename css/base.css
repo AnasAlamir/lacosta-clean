@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark-color);
   line-height: 1.3;
 }
+.link-hover:hover, .link-hover:focus {
+                color: #0d6efd !important;
+                text-decoration: underline !important;
+                cursor: pointer;
+              }
 
 a {
   text-decoration: none;
