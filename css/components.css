@@ -2,8 +2,16 @@
 /* Header Styles */
 #header {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: static; /* Ensure header is not fixed or sticky */
+  top: auto;
+  width: 100%;
+  z-index: 1000;
 }
-
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .navbar-brand img {
   max-height: 50px;
 }
@@ -12,6 +20,7 @@
   font-weight: 600;
   position: relative;
   padding: 0.5rem 0;
+  
 }
 
 .nav-link:after {
