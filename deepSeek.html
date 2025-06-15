@@ -21,14 +21,13 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <!-- Main CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-   
+  <!-- Main CSS Files -->
   <link rel="stylesheet" type="text/css" href="css/variables.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" type="text/css" href="css/components.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/utilities.css">
+
   <!-- Arabic Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,6 +167,7 @@
         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
       </symbol>
     </svg>
+
   <!-- Header -->
   <header id="header" class="sticky-top">
     <nav class="header-top bg-white">
@@ -193,7 +193,7 @@
         </div>
       </div>
     </nav>
-    <hr class="m-0">
+    
     <nav id="primary-header" class="navbar navbar-expand-lg py-3 bg-white">
       <div class="container">
         <button class="navbar-toggler d-lg-none border-0 shadow-none p-0" type="button" 
@@ -212,22 +212,6 @@
               <li class="nav-item px-3 py-1 py-lg-0">
                 <a class="nav-link active p-0" href="index.html">الرئيسية</a>
               </li>
-              <!-- <li class="nav-item px-3 py-1 py-lg-0 dropdown">
-                <a class="nav-link p-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  صفحات
-                  <svg width="20" height="20" style="vertical-align: sub;">
-                    <use xlink:href="#arrow-down"></use>
-                  </svg>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="about.html">من نحن</a></li>
-                  <li><a class="dropdown-item" href="blog.html">المدونة</a></li>
-                  <li><a class="dropdown-item" href="quote.html">طلب عرض سعر</a></li>
-                  <li><a class="dropdown-item" href="services.html">الخدمات</a></li>
-                  <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
-                  <li><a class="dropdown-item" href="contact.html">اتصل بنا</a></li>
-                </ul>
-              </li> -->
               <li class="nav-item px-3 py-1 py-lg-0">
                 <a class="nav-link p-0" href="about.html">من نحن</a>
               </li>
@@ -247,24 +231,6 @@
                 <a class="nav-link p-0" href="quote.html">طلب عرض سعر</a>
               </li>
             </ul>
-            
-            <!-- <div class="search-dropdown ms-lg-5 dropdown">
-              <a class="nav-link p-0 search dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                <svg class="search" width="24" height="24">
-                  <use xlink:href="#search"></use>
-                </svg>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end p-3">
-                <form class="d-flex">
-                  <input class="form-control" type="search" placeholder="بحث..." aria-label="Search">
-                  <button class="btn btn-primary" type="submit">
-                    <svg class="search" width="24" height="24">
-                      <use xlink:href="#search"></use>
-                    </svg>
-                  </button>
-                </form>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -272,39 +238,38 @@
   </header>
 
   <!-- Billboard Section -->
-  <section id="billboard">
-    <div class="row align-items-center g-0 bg-secondary">
+  <section id="billboard" class="section-dark">
+    <div class="row align-items-center g-0">
       <div class="col-lg-6 order-lg-2">
         <img src="images/clean-main.jpg" alt="خدمات التنظيف" class="img-fluid w-100">
       </div>
       <div class="col-lg-6 order-lg-1">
         <div class="p-5">
-          <h6 class="service-tag text-white">
+          <h6 class="service-tag">
             <span class="text-primary">#</span>أفضل خدمة تنظيف
           </h6>
-          <h1 class="display-4 fw-bold text-white my-4">خبرة أكثر من 7 سنوات في جميع مجالات النظافة</h1>
+          <h1 class="display-4 fw-bold my-4">خبرة أكثر من 7 سنوات في جميع مجالات النظافة</h1>
           <ul class="info d-flex flex-wrap align-items-center list-unstyled mt-4">
-            <li class="fw-bold text-white d-flex align-items-center me-4 mb-2">
+            <li class="fw-bold d-flex align-items-center me-4 mb-2">
               <svg class="text-primary me-1" width="20" height="20">
                 <use xlink:href="#check-circle"></use>
               </svg>
               تنظيف عميق
             </li>
-            <li class="fw-bold text-white d-flex align-items-center me-4 mb-2">
+            <li class="fw-bold d-flex align-items-center me-4 mb-2">
               <svg class="text-primary me-1" width="20" height="20">
                 <use xlink:href="#check-circle"></use>
               </svg>
               تنظيف السجاد
             </li>
-            <li class="fw-bold text-white d-flex align-items-center me-4 mb-2">
+            <li class="fw-bold d-flex align-items-center me-4 mb-2">
               <svg class="text-primary me-1" width="20" height="20">
                 <use xlink:href="#check-circle"></use>
               </svg>
               تنظيف المنازل
             </li>
           </ul>
-          <!-- <a href="contact.html" class="btn btn-light btn-bg btn-slide hover-slide-right mt-4"> -->
-          <a href="contact.html" class="btn btn-light btn-bg btn-slide hover-slide-left mt-4">
+          <a href="contact.html" class="btn btn-light btn-slide mt-4">
             <span>حجز موعد</span>
           </a>
         </div>
@@ -366,8 +331,7 @@
           <p class="mb-4">
             في شركة الرائد للتنظيف، مهمتنا هي خلق مساحات نظيفة وصحية وعملية لعملائنا الكرام. نحن نسعى جاهدين لتحسين جودة حياتك من خلال تقديم خدمات تنظيف موثوقة مصممة خصيصًا لاحتياجاتك الخاصة. سواء كان ذلك تنظيفًا عميقًا، أو صيانة دورية، أو خدمات تنظيف سريعة، نحن شريكك الموثوق.
           </p>
-          <!-- <a href="about.html" class="btn btn-primary btn-slide hover-slide-right"> -->
-          <a href="contact.html" class="btn btn-light btn-bg btn-slide hover-slide-left mt-4">
+          <a href="about.html" class="btn btn-primary btn-slide">
             <span>المزيد عنا</span>
           </a>
         </div>
@@ -387,7 +351,7 @@
       
       <div class="row g-4">
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm">
+          <div class="card h-100">
             <img src="images/house-clean.jpg" class="card-img-top" alt="تنظيف المنازل">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف المنازل</h5>
@@ -400,7 +364,7 @@
         </div>
         
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm">
+          <div class="card h-100">
             <img src="images/pexels-matilda-wormwood-4099260.jpg" class="card-img-top" alt="تنظيف المكاتب">
             <div class="card-body">
               <h5 class="card-title fw-bold">التعقيم و مكافحة الفيروسات</h5>
@@ -413,7 +377,7 @@
         </div>
         
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm">
+          <div class="card h-100">
             <img src="images/close-up-vacuuming-carpet.jpg" class="card-img-top" alt="تنظيف السجاد">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف السجاد</h5>
@@ -426,7 +390,7 @@
         </div>
         
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm">
+          <div class="card h-100">
             <img src="images/pexels-kseniachernaya-5691510.jpg" class="card-img-top" alt="تنظيف بعد البناء">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف بعد البناء</h5>
@@ -454,7 +418,7 @@
       <div class="swiper testimonialSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4">
+            <div class="card p-4">
               <div class="card-body">
                 <div class="mb-4">
                   <svg class="text-primary" width="40" height="40">
@@ -507,10 +471,7 @@
         <div class="col-lg-6 mb-5 mb-lg-0">
           <h2 class="display-4 fw-bold mb-4">احصل على خصم 30 ريال عند حجزك من الموقع</h2>
           <p class="mb-4">استفد من عرضنا الخاص واحصل على خصم فوري عند حجز أي خدمة تنظيف من خلال موقعنا الإلكتروني.</p>
-          <!-- <a href="contact.html" class="btn btn-light btn-lg"> -->
-          <a href="contact.html" class="btn btn-light btn-bg btn-slide hover-slide-left mt-4">
-            <span>احجز الآن</span>
-          </a>
+          <a href="contact.html" class="btn btn-light btn-lg">احجز الآن</a>
         </div>
         <div class="col-lg-6">
           <img src="images/offer.png" class="img-fluid rounded" alt="عرض خاص">
@@ -530,7 +491,7 @@
       </div>
       
       <div class="accordion" id="faqAccordion">
-        <div class="accordion-item mb-3 border-0 shadow-sm">
+        <div class="accordion-item mb-3">
           <h3 class="accordion-header">
             <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
               ما هي مدة خدمة التنظيف؟
@@ -543,7 +504,7 @@
           </div>
         </div>
         
-        <div class="accordion-item mb-3 border-0 shadow-sm">
+        <div class="accordion-item mb-3">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
               هل تستخدمون مواد تنظيف آمنة؟
@@ -562,7 +523,7 @@
   </section>
 
   <!-- Footer -->
-  <footer id="footer" class="bg-dark text-white py-5">
+  <footer id="footer" class="py-5">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
