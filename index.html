@@ -28,6 +28,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for sticky header */
+.scroll-offset {
+    scroll-margin-top: 120px; /* Adjust this value based on your header height */
+}
+  </style>
 </head>
 <body>
   <!-- SVG Icons -->
@@ -168,7 +179,7 @@
       <div class="container">
         <div class="d-flex justify-content-between align-items-center py-3">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo2-edit.webp" class="logo img-fluid" alt="لاكوستا للتنظيف">
+            <img src="images/logo2-edit.webp" class="logo img-fluid" alt="لاكوستا للتنظيف" width=100% height=100% loading="lazy">
           </a>
           <ul class="info d-flex flex-wrap align-items-center list-unstyled m-0">
             <li class="time text-black fw-bold d-flex align-items-center ms-4">
@@ -182,7 +193,7 @@
               <path fill="currentColor" d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.1 2.36 7.09L4 29l7.18-2.31A12.93 12.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.89-.52-5.54-1.5l-.39-.23l-4.27 1.37l1.4-4.13l-.25-.4A9.94 9.94 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10s-4.486 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9c-.25-.09-.43-.14-.61.14c-.18.28-.7.9-.86 1.08c-.16.18-.32.2-.6.07c-.28-.14-1.18-.44-2.25-1.4c-.83-.74-1.39-1.65-1.55-1.93c-.16-.28-.02-.43.12-.57c.13-.13.28-.32.42-.48c.14-.16.18-.28.28-.46c.09-.18.05-.34-.02-.48c-.07-.14-.61-1.47-.84-2.01c-.22-.53-.45-.46-.61-.47c-.16-.01-.34-.01-.52-.01c-.18 0-.48.07-.73.34c-.25.27-.96.94-.96 2.29c0 1.34.98 2.64 1.12 2.82c.14.18 1.93 2.95 4.68 4.02c.65.28 1.16.45 1.56.57c.66.21 1.26.18 1.74.11c.53-.08 1.65-.67 1.88-1.32c.23-.65.23-1.2.16-1.32c-.07-.12-.25-.19-.53-.33z"/>
               </svg>
               <a href="https://wa.me/201212073315" target="_blank" class="text-black text-decoration-none link-hover">واتساب: 01212073315</a>
-            </li></svg>
+            </li>
           </ul>
         </div>
       </div>
@@ -203,18 +214,18 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">الرئيسية</a>
+                  <a class="nav-link p-0" href="index.html">الرئيسية</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="#about-us">من نحن</a>
+                  <a class="nav-link p-0" href="#about-us">من نحن</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="#services">الخدمات</a>
+                  <a class="nav-link p-0" href="#services">الخدمات</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="#faq">الأسئلة الشائعة</a>
+                  <a class="nav-link p-0" href="#faq">الأسئلة الشائعة</a>
               </li>
-            </ul>
+          </ul>
           </div>
         </div>
       </div>
@@ -224,7 +235,7 @@
   <section id="billboard">
     <div class="row align-items-center g-0 bg-secondary">
       <div class="col-lg-6 order-lg-2">
-        <img src="images/clean-main.webp" alt="خدمات التنظيف" class="img-fluid w-100">
+        <img src="images/clean-main.webp" alt="خدمات التنظيف" class="img-fluid w-100" width="800" height="600" loading="lazy">
       </div>
       <div class="col-lg-6 order-lg-1">
         <div class="p-5">
@@ -266,12 +277,12 @@
     </div>
   </section>
   <!-- About Us Section -->
-  <section id="about-us" class="py-5">
+  <section id="about-us" class="py-5 scroll-offset">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
           <div class="position-relative">
-            <img src="images/window-clean.webp" class="img-fluid rounded" alt="فريق العمل">
+            <img src="images/window-clean.webp" class="img-fluid rounded" alt="فريق العمل" width="500" height="600" loading="lazy">
           </div>
         </div>
         <div class="col-lg-7">
@@ -294,7 +305,7 @@
     </div>
   </section>
   <!-- Services Section -->
-  <section id="services" class="py-5 bg-light">
+  <section id="services" class="py-5 bg-light scroll-offset">
     <div class="container">
       <div class="text-center mb-5">
         <h6 class="mb-3">
@@ -306,7 +317,7 @@
         <!-- First Card -->
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm">
-            <img src="images/house-clean.webp" class="card-img-top" alt="تنظيف المنازل">
+            <img src="images/house-clean.webp" class="card-img-top" alt="تنظيف المنازل" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف المنازل</h5>
               <p class="card-text">خدمة تنظيف شاملة للمنازل بجميع تفاصيلها باستخدام أفضل المنظفات والمعقمات.</p>
@@ -320,7 +331,7 @@
         <!-- Second Card -->
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm">
-            <img src="images/pexels-matilda-wormwood-4099260.webp" class="card-img-top" alt="التعقيم و مكافحة الفيروسات">
+            <img src="images/pexels-matilda-wormwood-4099260.webp" class="card-img-top" alt="التعقيم و مكافحة الفيروسات" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h5 class="card-title fw-bold">التعقيم و مكافحة الفيروسات</h5>
               <p class="card-text">تقدم الشركه خدمه التعقيم و مكافحة الفيروسات بافضل انواع المطهرات الفعاله.</p>
@@ -334,7 +345,7 @@
         <!-- Third Card -->
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm">
-            <img src="images/close-up-vacuuming-carpet.webp" class="card-img-top" alt="تنظيف السجاد">
+            <img src="images/close-up-vacuuming-carpet.webp" class="card-img-top" alt="تنظيف السجاد" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف السجاد</h5>
               <p class="card-text">تنظيف وتعقيم السجاد بطرق علمية حديثة تضمن إزالة جميع البقع والروائح.</p>
@@ -348,7 +359,7 @@
         <!-- Fourth Card (will wrap to next row) -->
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm">
-            <img src="images/office-clean.webp" class="card-img-top" alt="تنظيف الشركات والمكاتب">
+            <img src="images/office-clean.webp" class="card-img-top" alt="تنظيف الشركات والمكاتب" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف الشركات والمكاتب</h5>
               <p class="card-text">خدمة مستمرة أو دورية لتنظيف المكاتب، قاعات الاجتماعات، الممرات، ودورات المياه، للحفاظ على بيئة عمل صحية ومهنية.</p>
@@ -361,7 +372,7 @@
         <!-- Fifth Card (will wrap to next row) -->
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 border-0 shadow-sm">
-            <img src="images/pexels-kseniachernaya-5691510.webp" class="card-img-top" alt="تنظيف بعد البناء">
+            <img src="images/pexels-kseniachernaya-5691510.webp" class="card-img-top" alt="تنظيف بعد البناء" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h5 class="card-title fw-bold">تنظيف بعد البناء</h5>
               <p class="card-text">إزالة جميع آثار البناء والغبار لتحصل على منزل نظيف وجاهز للسكن.</p>
@@ -377,7 +388,7 @@
     </div>
   </section>
   <!-- CTA Section -->
-  <section id="cta" class="py-5 bg-secondary text-white">
+  <section id="cta" class="py-5 bg-secondary text-white scroll-offset">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
@@ -388,13 +399,13 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <img src="images/offer.webp" class="img-fluid rounded" alt="عرض خاص">
+            <img src="images/offer.webp" class="img-fluid rounded" alt="عرض خاص" width="500" height="400" loading="lazy">
         </div>
       </div>
     </div>
   </section>
   <!-- FAQ Section -->
-  <section id="faq" class="py-5">
+  <section id="faq" class="py-5 scroll-offset">
     <div class="container">
       <div class="text-center mb-5">
         <h6 class="mb-3">
@@ -436,7 +447,7 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
-          <img src="images/logo2-edit.webp" class="mb-3" width="180" alt="لاكوستا للتنظيف">
+            <img src="images/logo2-edit.webp" class="mb-3" width="180" height="100" alt="لاكوستا للتنظيف" loading="lazy">
           <p class="mb-4">
             شركة لاكوستا للتنظيف تقدم حلولاً متكاملة لجميع احتياجات التنظيف المنزلية والتجارية، مع ضمان الجودة والكفاءة في كل خدمة نقدمها.
           </p>
@@ -502,6 +513,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script>
     // Initialize Swiper
     var testimonialSwiper = new Swiper(".testimonialSwiper", {
@@ -520,6 +532,67 @@
         }
       }
     });
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const offcanvasElement = document.getElementById('navbarOffcanvas');
+      const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+      
+      // Function to properly hide offcanvas with backdrop
+      function hideOffcanvas(offcanvas) {
+          // Remove our custom data attribute first
+          offcanvasElement.removeAttribute('data-scroll-target');
+          
+          // Use Bootstrap's native hide method
+          offcanvas.hide();
+          
+          // Let Bootstrap handle the backdrop removal naturally
+      }
+      
+      // Handle navigation clicks
+      navLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+              const href = this.getAttribute('href');
+              const targetElement = document.querySelector(href);
+              
+              if (targetElement) {
+                  e.preventDefault();
+                  
+                  const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                  const isOffcanvasOpen = offcanvasElement.classList.contains('show');
+                  
+                  if (isOffcanvasOpen && offcanvas) {
+                      // Store target for after offcanvas closes
+                      offcanvasElement.setAttribute('data-scroll-target', href);
+                      hideOffcanvas(offcanvas);
+                  } else {
+                      // Direct scroll for desktop
+                      targetElement.scrollIntoView({
+                          behavior: 'smooth',
+                          block: 'start'
+                      });
+                  }
+              }
+          });
+      });
+      
+      // Handle scroll after offcanvas is completely hidden
+      offcanvasElement.addEventListener('hidden.bs.offcanvas', function() {
+          const scrollTarget = this.getAttribute('data-scroll-target');
+          if (scrollTarget) {
+              // Small delay to ensure smooth scrolling works
+              setTimeout(() => {
+                  const targetElement = document.querySelector(scrollTarget);
+                  if (targetElement) {
+                      targetElement.scrollIntoView({
+                          behavior: 'smooth',
+                          block: 'start'
+                      });
+                  }
+              }, 150);
+          }
+      });
+  });
   </script>
 </body>
 </html>
