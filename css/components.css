@@ -14,13 +14,18 @@
 }
 .navbar-brand img {
   max-height: 50px;
+  height: auto;
+  width: auto;
+  display: block;
 }
 
 .nav-link {
   font-weight: 600;
   position: relative;
   padding: 0.5rem 0;
-  
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link:after {
@@ -51,6 +56,11 @@
   text-transform: uppercase;
   border-radius: 0px;
   transition: all 0.5s ease-in-out;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 /* - Primary Buttons
@@ -84,42 +94,14 @@
   border: none;
   cursor: pointer;
   background-color: var(--secondary-color);
+  overflow: hidden;
 }
 
-/* .btn-slide.hover-slide-right::before {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 3%;
-  position: absolute;
-  content: "";
-  background-color: var(--primary-color);
-  transition: 0.3s ease-in-out;
-}
-
-.btn-slide span {
-  position: relative;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: 0.3s;
-  font-weight: 600;
-}
-
-.btn-slide.hover-slide-right:hover::before {
-  width: 100%;
-}
-
-.btn-slide.hover-slide-right:hover span {
-  color: var(--light-color);
-} */
 /* rtl slide right */
-.btn-slide.hover-slide-left::before { /* Changed from hover-slide-right to hover-slide-left */
+.btn-slide.hover-slide-left::before {
   top: 0;
   bottom: 0;
-  right: 0; /* Changed from left: 0 to right: 0 */
+  right: 0;
   height: 100%;
   width: 3%;
   position: absolute;
@@ -132,18 +114,20 @@
   position: relative;
   display: inline-block;
   top: 0;
-  right: 0; /* Changed from left: 0 to right: 0 */
+  right: 0;
   width: 100%;
   transition: 0.3s;
   font-weight: 600;
-  z-index: 2; /* Ensure text stays above the sliding effect */
+  z-index: 2;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
-.btn-slide.hover-slide-left:hover::before { /* Changed from hover-slide-right to hover-slide-left */
+.btn-slide.hover-slide-left:hover::before {
   width: 100%;
 }
 
-.btn-slide.hover-slide-left:hover span { /* Changed from hover-slide-right to hover-slide-left */
+.btn-slide.hover-slide-left:hover span {
   color: var(--light-color);
 }
 
@@ -158,6 +142,14 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.card img {
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 /* Testimonials */
 .testimonial-card {
   border: none;
@@ -167,6 +159,9 @@
 /* Accordion Styles */
 .accordion-button {
   font-weight: 700;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .accordion-button:not(.collapsed) {
@@ -182,6 +177,9 @@
 #footer a {
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s ease;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 #footer a:hover {
@@ -195,6 +193,8 @@
   justify-content: center;
   width: 40px;
   height: 40px;
+  min-height: 44px;
+  min-width: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -203,4 +203,31 @@
 .social-links a:hover {
   background-color: var(--primary-color);
   transform: translateY(-3px);
+}
+
+/* Optimize for touch */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    min-height: 48px;
+  }
+
+  a {
+    min-height: 44px;
+  }
+
+  .card {
+    transform: none;
+  }
+
+  .card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .btn-slide.hover-slide-left::before {
+    width: 2%;
+  }
 }
