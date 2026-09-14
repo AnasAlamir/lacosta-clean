@@ -41,4 +41,128 @@
   .offcanvas-collapse.open {
     transform: translateX(0);
   }
+
+  /* Hero Section Responsive */
+  #billboard {
+    padding: 2rem 0 !important;
+  }
+
+  #billboard .col-lg-6 {
+    margin-bottom: 2rem;
+  }
+
+  #billboard .p-5 {
+    padding: 2rem !important;
+  }
+
+  #billboard h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.3;
+    margin-bottom: 1.5rem !important;
+  }
+
+  #billboard h6.service-tag {
+    font-size: 0.95rem;
+  }
+
+  #billboard .info {
+    flex-direction: column !important;
+  }
+
+  #billboard .info li {
+    margin-bottom: 0.75rem !important;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+
+  #billboard p {
+    font-size: 0.95rem;
+  }
+
+  #billboard img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #billboard .p-5 {
+    padding: 1.5rem !important;
+  }
+
+  #billboard h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  #billboard h6.service-tag {
+    font-size: 0.85rem;
+  }
+
+  #billboard .btn {
+    width: 100%;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.9rem;
+  }
+
+  #billboard img {
+    max-height: 300px;
+  }
+
+  .header-top .info {
+    flex-direction: column !important;
+  }
+
+  .header-top .info li {
+    margin-bottom: 0.5rem !important;
+    margin-right: 0 !important;
+    font-size: 0.85rem;
+  }
+
+  .navbar-brand img {
+    max-height: 40px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #billboard .p-5 {
+    padding: 1rem !important;
+  }
+
+  #billboard h1 {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  #billboard h6.service-tag {
+    font-size: 0.75rem;
+  }
+
+  #billboard p {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem !important;
+  }
+
+  #billboard .btn {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem !important;
+  }
+
+  #billboard svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  #billboard img {
+    max-height: 250px;
+  }
+
+  .display-4 {
+    font-size: 1.5rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.2rem !important;
+  }
 }
