@@ -3,6 +3,72 @@
 #billboard {
   background-color: var(--secondary-color);
   color: var(--white);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+#billboard .row {
+  width: 100%;
+}
+
+#billboard img {
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+#billboard h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+#billboard h6.service-tag {
+  font-size: clamp(0.75rem, 2.5vw, 1.2rem);
+  margin-bottom: 1rem;
+}
+
+#billboard p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+#billboard .info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#billboard .info li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+#billboard .info svg {
+  flex-shrink: 0;
+  min-width: 24px;
+}
+
+#billboard .btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#billboard a {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Animation */
@@ -13,4 +79,26 @@
 
 .fade-in {
   animation: fadeIn 0.6s ease forwards;
+}
+
+/* Optimize for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  #billboard .btn {
+    min-height: 48px;
+  }
+
+  #billboard a {
+    padding: 0.25rem 0;
+  }
+}
+
+/* Print styles */
+@media print {
+  #billboard {
+    page-break-inside: avoid;
+  }
+
+  #billboard .btn {
+    display: none;
+  }
 }
